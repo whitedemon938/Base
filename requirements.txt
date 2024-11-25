@@ -1,6 +1,7 @@
 aiofiles
 aiohttp
 aioshutil
+cryptography
 bs4
 gunicorn
 flask
