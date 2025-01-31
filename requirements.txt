@@ -9,7 +9,7 @@ motor
 pymongo
 python-dotenv
 pytz
-git+https://github.com/vpcreatz/pyrofork-adv
+pyrofork
 requests
 tgcrypto
 urllib3==1.26
