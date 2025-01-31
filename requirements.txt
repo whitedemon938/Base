@@ -8,7 +8,7 @@ flask
 motor
 pymongo
 python-dotenv
-git+https://github.com/vpcreatz/pyrofork-adv
+pyrofork
 requests
 tgcrypto
 urllib3==1.26
