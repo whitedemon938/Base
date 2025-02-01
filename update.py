@@ -1,8 +1,6 @@
 from logging import FileHandler, StreamHandler, INFO, basicConfig, error as log_error, info as log_info
 from os import path as ospath, environ, remove
 from subprocess import run as srun, call as scall
-from pkg_resources import working_set
-from requests import get as rget
 from dotenv import load_dotenv, dotenv_values
 from pymongo import MongoClient
 
@@ -26,7 +24,7 @@ if len(DATABASE_URL) == 0:
 
 if DATABASE_URL is not None:
     conn = MongoClient(DATABASE_URL)
-    db = conn.bypass
+    db = conn.shortener
     old_config = db.settings.deployConfig.find_one({'_id': bot_id})
     config_dict = db.settings.config.find_one({'_id': bot_id})
     if old_config is not None:
@@ -51,8 +49,8 @@ if UPSTREAM_REPO is not None:
         srun(["rm", "-rf", ".git"])
         
     update = srun([f"git init -q \
-                     && git config --global user.email drxxstrange@gmail.com \
-                     && git config --global user.name SilentDemonSD \
+                     && git config --global user.email movienow39@gmail.com \
+                     && git config --global user.name whitedemon938 \
                      && git add . \
                      && git commit -sm update -q \
                      && git remote add origin {UPSTREAM_REPO} \
