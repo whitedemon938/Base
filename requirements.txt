@@ -1,8 +1,10 @@
 aiohttp
+bs4
 flask
 gunicorn
 pymongo
 pyrofork==2.3.57
 python-dotenv
 TgCrypto
+urllib3==2.3.0
 uvloop
