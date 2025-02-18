@@ -2,7 +2,7 @@ aiohttp
 bs4
 flask
 gunicorn
-pymongo
+motor
 pyrofork==2.3.57
 python-dotenv
 TgCrypto
